@@ -5,6 +5,7 @@ import { fileURLToPath } from "url";
 import bodyParser from "body-parser";
 import { webRoutes } from "./routes/webRoutes.js";
 import { apiRoutes } from "./routes/apiRoutes.js";
+import cors from "cors";
 
 // SETUP CONFIG
 const app = express();
@@ -16,6 +17,9 @@ app.set("view engine", "pug");
 app.use(express.static("public", { mimetype: "text/css" }));
 app.use(express.json());
 app.use(bodyParser.json());
+app.use(cors({
+  origin: "http://localhost:4000"
+}))
 //API ROUTES
 app.use("/api", apiRoutes);
 
