@@ -1,0 +1,41 @@
+extends main
+block content
+    script(src="/scripts/myPosts.js")
+    .row.m-4
+        .col-md-4
+            .card
+                .card-body
+                    h4 User Information
+                    p.card-text
+                        strong Email: 
+                                //- span= user.email
+                        span someuser@gmail.com
+        .col-md-8.mb-4
+            each post in posts
+                .row.row-cols-1.row-cols-md-2.g-4
+                    .col
+                        .card.card-item
+                            .card-body
+                                h5.card-title=post.postTitle
+                                p.card-text=post.postBody.substring(0, 100) + "..."
+                                .d-flex.justify-content-between
+                                    .btn-group.align-items-center
+                                        button.btn.border-0.outline-none(type="button")
+                                            i.bi.bi-heart-fill
+                                            span=post.likes
+                                        span.text-muted
+                                            i.bi.bi-eye-fill
+                                            span=post.views
+                                    button(class="btn btn-success btn-edit") Edit
+                                    button(class="btn btn-dark btn-delete") Delete
+                                    a(href="/post/" + post.id, class="btn btn-danger btn-read-more") Read More
+                form.bg-dark.border.border-danger.p-3.rounded.shadow.d-none.flex-column.justify-content-between#form.form-edit.edit
+                    .pb-3.z-3
+                        label(for="postTitle" class="form-label text-light") Post Title
+                        input(type="text" class="form-control title-input" value=`${post.postTitle}` id="postTitle" name="postTitle" required).post-title
+                    .pb-3.z-3
+                        label(for="postContent" class="form-label text-light") Content
+                        textarea(class="form-control body-input" id="postContent" name="postContent" rows="10" required).post-body=post.postBody 
+                    .d-flex.justify-content-between.gap-3 
+                        button(type="submit" class="btn btn-success btn-submit").w-100 Edit Post
+                        button.btn.btn-danger.w-100.btn-cancel Cancel

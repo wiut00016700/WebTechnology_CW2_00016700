@@ -1,0 +1,13 @@
+extends main
+block content
+    script(src="/scripts/post.js") 
+    h4.text-center #{title}
+    .d-flex.justify-content-center.align-items-center.h-100
+        form.border.border-danger.p-3.rounded.shadow.d-flex.flex-column.justify-content-between#form.form-edit
+                .mb-3
+                    label(for="postTitle" class="form-label") Post Title
+                    input(type="text" class="form-control" id="postTitle" name="postTitle" required).post-title
+                .mb-3
+                    label(for="postContent" class="form-label") Content
+                    textarea(class="form-control" id="postContent" name="postContent" rows="10" required).post-body
+                button(type="submit" class="btn btn-danger") Publish Post

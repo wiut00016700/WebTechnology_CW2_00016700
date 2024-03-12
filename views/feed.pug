@@ -1,0 +1,23 @@
+extends main
+block content
+    .text-center
+        h4 Daily posts every day
+        p Check your feed everyday to see what new others are posting
+    .text-center.container-xxl.card-grid.h-100.p-3
+        .row.row-cols-1.row-cols-md-3.g-4
+            each post in posts
+                .col
+                    .card
+                        .card-body
+                            h5.card-title= post.postTitle
+                            p.card-text= post.postAuthor
+                            p.card-text= post.postBody.substring(0, 100) + "..."
+                            .d-flex.justify-content-between
+                                .btn-group.align-items-center
+                                    button.btn.border-0.outline-none(type="button")
+                                        i.bi.bi-heart-fill
+                                        span=post.likes
+                                    span.text-muted
+                                        i.bi.bi-eye-fill
+                                        span=post.views
+                                a(href="/post/" + post.id, class="btn btn-danger") Read More

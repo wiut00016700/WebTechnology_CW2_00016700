@@ -1,0 +1,35 @@
+doctype html
+html  
+    head
+        link(rel="stylesheet", href="/styles/main.css")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css")
+        title 00016700
+    body
+        script(src="/scripts/main.js")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js")
+        //- MAIN CONTAINER
+        main.h-100.d-flex.flex-column.justify-content-between
+            //- NAVBAR CODE
+            nav.navbar.navbar-expand-lg.px-3.bg-danger
+                .container-fluid
+                    button(type="button", data-bs-toggle="collapse", data-bs-target="#navbarTogglerDemo01", aria-controls="navbarTogglerDemo01", aria-expanded="false", aria-label="Toggle navigation").navbar-toggler.text-light.bg-light
+                        span.navbar-toggler-icon
+                    #navbarTogglerDemo01.collapse.navbar-collapse
+                        a(href="/").navbar-brand.text-light REDDITOR
+                        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                            li.nav-item
+                                a(aria-current="page", href="/").nav-link.text-light Feed                                    
+                            li.nav-item
+                                a(aria-current="page", href="/personal").nav-link.text-light.profile-link My Profile
+                            li.nav-item
+                                a(aria-current="page", href="/post/edit").nav-link.text-light New Post
+                            li.nav-item
+                                a(aria-current="page", href="/sign-up").nav-link.text-light Create Account           
+            //- BODY SECTION FOR EACH PAGE
+            section
+                block content
+            //- FOOTER
+            footer.bg-dark.text-light.pb-4
+                h4.text-center This website was created to fulfill Web Technology module's requirements and does not represent an actual company or service

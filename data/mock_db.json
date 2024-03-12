@@ -1,0 +1,96 @@
+{
+  "posts": [
+    {
+      "id": 12412414459,
+      "postTitle": "Where I get my daily dose of existential crisis",
+      "postBody": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, recusandae. Aspernatur quibusdam fugit, iusto consequatur quisquam quidem reprehenderit quod mollitia tenetur enim qui earum doloremque est debitis delectus culpa dolore!",
+      "postAuthor": "somerandomdude@gmail.com",
+      "views": 120,
+      "likes": 15,
+      "createdAt": "2024-03-06",
+      "updatedAt": "2024-03-06"
+    },
+    {
+      "id": 1709707109375,
+      "postTitle": "What is the main cause of acne inflamation?",
+      "postBody": "dahskfhkjajslkfjas klasjlfkjaskdjf lkajflkajslkfjkla lkafjklajfjaf lajlfafjla jlkfjalskdjf jlfkasjslkf jlaflsjflka",
+      "postAuthor": "somerandomdude@gmail.com",
+      "views": 10,
+      "likes": 2,
+      "createdAt": "2024-03-06",
+      "updatedAt": "2024-03-06"
+    },
+    {
+      "id": 1709713698067,
+      "postTitle": "kfjklasjdfjasjf lfkjlaskfl f jlflasdf lfjlkalfl jflalf? kajjkfdlaslfa",
+      "postBody": "dahskfhkjajslkfjas lkajflkajslkfjkla lkafjklajfjaf lajlfafjla jlkfjalskdjf jlfkasjslkf jlaflsjflka fjlaksjflajslfjaslfjas",
+      "postAuthor": "somerandomdude@gmail.com",
+      "views": 0,
+      "likes": 0,
+      "createdAt": "2024-03-06",
+      "updatedAt": "2024-03-06"
+    },
+    {
+      "id": 1709714159697,
+      "postTitle": "kfjklasjdfjasjf lfkjlaskfl f jlflasdf lfjlkalfl jflalf? kajjkfdlaslfa",
+      "postBody": "dahskfhkjajslkfjas lkajflkajslkfjkla lkafjklajfjaf lajlfafjla jlkfjalskdjf jlfkasjslkf jlaflsjflka fjlaksjflajslfjaslfjas",
+      "postAuthor": "somedude@gmail.com",
+      "views": 911,
+      "likes": 69,
+      "createdAt": "2024-03-06",
+      "updatedAt": "2024-03-06"
+    },
+    {
+      "id": 1709731311544,
+      "postTitle": "Some random bulshit post",
+      "postBody": "sfkjaklsfjajsdk jkakjlfdkjl akjlfkjlas kjlafjk jklafkj kjlakjl  fkjlakfkj fkjla l",
+      "postAuthor": "somerandomdude@gmail.com",
+      "views": 0,
+      "likes": 0,
+      "createdAt": "2024-03-06",
+      "updatedAt": "2024-03-06"
+    },
+    {
+      "id": 1709749650613,
+      "postTitle": "fjklasjfklaskdfjkl jklsajfk jsjlkfj klajkflj klaf",
+      "postBody": "fjaslskfjaklsjfk ljaklsfj klajfkl jklajf kljaklfj klajfkl jklajfk shit",
+      "postAuthor": "dkjasflkasjldfjla@gmail.com",
+      "views": 0,
+      "likes": 0,
+      "createdAt": "2024-03-06",
+      "updatedAt": "2024-03-06"
+    },
+    {
+      "id": 1709749800270,
+      "postTitle": "fmafklakjfkjaklfjkl jklajfkl ",
+      "postBody": "jfklasdjfkljaslkfjk ljklsfj klajsfkl jalksjf ljalkfj lasjfj",
+      "postAuthor": "dkjasflkasjldfjla@gmail.com",
+      "views": 0,
+      "likes": 0,
+      "createdAt": "2024-03-06",
+      "updatedAt": "2024-03-06"
+    }
+  ],
+  "users": [
+    {
+      "id": 5609714159697,
+      "email": "somedude@gmail.com",
+      "password": "kfklasjdfajkflla"
+    },
+    {
+      "id": 1709720666956,
+      "email": "randomdude@gmail.com",
+      "password": "sfkjaklsfjajsdkl"
+    },
+    {
+      "id": 1709720935966,
+      "email": "somerandomdude@gmail.com",
+      "password": "sfkjaklsfjajsdkl"
+    },
+    {
+      "id": 1709739604551,
+      "email": "dkjasflkasjldfjla@gmail.com",
+      "password": "fjlakjfdlkadkjfas"
+    }
+  ]
+}

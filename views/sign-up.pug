@@ -1,0 +1,14 @@
+extends main
+block content
+    script(src="/scripts/auth.js")
+    .d-flex.justify-content-center.align-items-center.h-100
+        form#form.form-auth.border.border-danger.p-3.rounded.shadow.d-flex.flex-column.justify-content-between
+            h3.text-center Sign up
+            .form-body
+                .form-group.mb-3
+                    label(for="email") Email address
+                    input.form-control.email(type="email" id="email" name="email" placeholder="Enter your email" required).email
+                .form-group.mb-3
+                    label(for="password") Password
+                    input.form-control.password(type="password" id="password" name="password" placeholder="Enter your password" required).password
+            button.btn.btn-danger.px-4(type="submit") Sign Up
